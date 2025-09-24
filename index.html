@@ -58,10 +58,18 @@
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     h2 {
-      color: #ffcc00;
+      color: #001f5c; /* navy blue */
       margin-bottom: 15px;
       font-size: 1.8rem;
       border-bottom: 2px solid #333;
@@ -196,5 +204,22 @@
     <p>© 2025 Shruthi M | Portfolio</p>
   </footer>
 
+  <script>
+    // Reveal sections on scroll
+    const sections = document.querySelectorAll("section");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          sec.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
 </body>
 </html>
