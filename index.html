@@ -10,29 +10,29 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      scroll-behavior: smooth; /* enables smooth scrolling */
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #0d0d0d; /* dark background */
       color: #f1f1f1;
-      line-height: 1.6;
+      line-height: 1.5;
     }
 
     header {
       text-align: center;
       background: #111;
-      padding: 40px 20px 20px 20px;
-      border-bottom: 2px solid #333;
+      padding: 25px 15px 15px 15px; /* reduced gap */
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       font-weight: bold;
-      color: #ffcc00; /* golden accent */
-      text-transform: uppercase; /* CAPITAL LETTERS */
-      margin-bottom: 15px;
+      color: #f9f9f9; /* light color for name */
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
 
     nav ul {
@@ -40,7 +40,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 15px; /* reduced gap */
     }
 
     nav ul li a {
@@ -55,12 +55,12 @@
     }
 
     section {
-      padding: 60px 20px;
+      padding: 40px 15px; /* reduced padding */
       max-width: 1000px;
       margin: auto;
       opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.8s ease-out;
+      transform: translateY(40px);
+      transition: all 0.7s ease-out;
     }
 
     section.visible {
@@ -69,33 +69,33 @@
     }
 
     h2 {
-      color: #001f5c; /* navy blue */
-      margin-bottom: 15px;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #333;
+      color: #f1f1f1; /* light color for headings */
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+      border-bottom: 1px solid #333;
       display: inline-block;
-      padding-bottom: 5px;
+      padding-bottom: 4px;
     }
 
     .card {
       background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 15px 0;
-      box-shadow: 0 2px 6px rgba(255,204,0,0.2);
+      padding: 15px; /* reduced padding */
+      border-radius: 8px;
+      margin: 10px 0; /* reduced margin */
+      box-shadow: 0 1px 4px rgba(255,204,0,0.15);
       transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px);
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      border-top: 2px solid #333;
+      padding: 15px;
+      border-top: 1px solid #333;
       background: #111;
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: 0.9rem;
       color: #bbb;
     }
