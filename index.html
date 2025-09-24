@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shruthi M | Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #ffcc00;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f1f1f1;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      margin: 15px 0;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      background: #111;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      nav ul li {
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shruthi M</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>B.E Computer Science and Engineering student at Karpagam College of Engineering (2026). Passionate about software development, problem-solving, and building impactful applications.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><b>Graduation:</b> Karpagam College of Engineering (2026), CGPA: 8.4</p>
+      <p><b>HSC:</b> Shri Vidhya Bharathi Matric Hr. Sec. School (2022), 94.1%</p>
+      <p><b>SSLC:</b> Gurukulam Matric School (2020), 98.8%</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <p><b>Tech Stack:</b> Java, HTML, CSS, JavaScript, React.js, Spring Boot</p>
+      <p><b>Tools:</b> VS Code, Eclipse, MySQL</p>
+      <p><b>Concepts:</b> DBMS, DSA</p>
+      <p><b>Soft Skills:</b> Team Leadership, Creative Writing, Public Speaking, Effective Communication</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Shopverse - E-Commerce Platform (Aug '25)</h3>
+      <p>Full-stack online marketplace with product buying/selling, roles, review system, and admin monitoring.</p>
+    </div>
+    <div class="card">
+      <h3>Online Examination & Certification Portal (Feb '25)</h3>
+      <p>Full-stack system for students, teachers with login, exam creation, auto evaluation, and analytics.</p>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>React (Basic) - HackerRank [Mar '25]</li>
+        <li>SQL (Basic & Intermediate) - HackerRank [Mar '25]</li>
+        <li>JavaScript (Basic) - HackerRank [Jan '25]</li>
+        <li>NPTEL Elite - Programming in Java [Apr '24]</li>
+        <li>NPTEL Elite - Leadership and Team Effectiveness [Apr '23]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Scholastic Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Won 1st Prize in Code Hunters, KIT UDHAYAM [Mar '24]</li>
+        <li>Vice President of AURA Association [Sep '24 - June '25]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="internship">
+    <h2>Internship</h2>
+    <div class="card">
+      <p><b>OctaNet Services Pvt Ltd (Sep '23 - Oct '23):</b> Developed to-do list & basic webpage creation using HTML, CSS, JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><b>Email:</b> shruthmoorht005@gmail.com</p>
+      <p><b>Phone:</b> +91 7639447973</p>
+      <p><b>Links:</b> 
+        <a href="https://leetcode.com" target="_blank">LeetCode</a> | 
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com" target="_blank">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Shruthi M | Portfolio</p>
+  </footer>
+
+</body>
+</html>
